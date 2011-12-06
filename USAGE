@@ -1,0 +1,61 @@
+_ Description _
+
+Le code présenté ci-contre offre une implémentation de std::list uniquement en
+langage C. Il exploite une particularité de gcc dans le traitement des macros,
+je ne peux donc pas garantir qu'il compile sur d'autres compilateurs.
+
+Les listes gèrent un système d'itérateur, mais contrairement à l'implémentation
+C++ de std::list, ces derniers sont des objets pointeurs, et non pas des objets
+"en dur". Ceci implique qu'il convient de penser à bien les supprimer après leur
+utilisation, même si cela nécessite de les enregistrer dans quelques variables
+temporaires.
+
+_ Déclarer une liste _
+
+Créez un fichier header (.h), et insérez les lignes suivantes :
+
+#ifndef HEADER_NAME_H_    // garde
+#define HEADER_NAME_H_    // garde
+#include "TypeName.h"     // Fichier contenant la définition du type
+#define T TypeName        // Paramètre template (nom du type)
+#include "LibListAPI_T.h" // Inclusion de l'API templatisée
+#undef T                  // Déchargement du paramètre (non-requis)
+#endif                    // garde
+
+_ Définir une liste _
+
+Créez un fichier source (.c), et insérez-y les lignes suivantes :
+
+#include "TypeName.h"     // Fichier contenant la définition du type
+#include "ListHeader.h"   // Fichier header créé à l'étape précédente
+#define T TypeName        // Paramètre template (nom du type)
+#include "LibListAPI_T.c" // Notez le .c ; Génération des méthodes
+#undef T                  // Déchargement du paramètre (non-requis)
+
+_ Utiliser une liste _
+
+Incluez dans votre fichier source le header de la liste, créé ci-dessus, puis
+utilisez la macro suivante pour appeler les fonctions :
+
+  | mixed ListAction(T, action, ...)
+  | 
+  | T      : Type du contenu de la liste
+  | action : Méthode appelée
+  | ...    : Paramètres associés à la méthode
+
+Consultez le header principal de l'API (LibListAPI.h) pour une liste des
+méthodes implémentées dans ce module.
+
+_ Utiliser un itérateur _
+
+Incluez dans votre fichier source le header de la liste, créé ci-dessus, puis
+utilisez la macro suivante pour appeler les fonctions :
+
+  | mixed ListItAction(T, action, ...)
+  | 
+  | T      : Type du contenu de la liste
+  | action : Méthode appelée
+  | ...    : Paramètres associés à la méthode
+
+Consultez le header principal de l'API (LibListAPI.h) pour une liste des
+méthodes implémentées dans ce module.

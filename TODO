@@ -1,0 +1,10 @@
+- Implémenter les fonctions manquantes de la list, notamment :
+   - assign
+
+- Implémenter quelque algorithmes simples, par exemple :
+   - find
+   - find_if
+   - for_each
+   - transform
+   - min_element
+   - max_element

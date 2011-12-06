@@ -1,0 +1,43 @@
+- Mise à jour -
+
+Ce repository a été partagé sur GitHub (il n'était jusque-là présent que dans
+mon répertoire public de l'afs du réseau Epitech, par conséquent le texte qui
+suit ne sera peut-être pas totalement compréhensible pour des personnes de
+l'extérieur. Toutes mes confuses.).
+
+Sentez vous libre de le commenter, voire même éventuellement de participer à
+de possible évolutions !
+
+                                                                      - Arcanis
+                                                                     06/12/2011
+
+- Note Informative -
+
+Les fichiers présents ci-contre sont présents sur ce public pour un but
+purement informatif. Je pense que vous comprendrez par vous-même que si vous
+reprenez ce code dans un de vos projets, vous allez vite vous faire repérer
+(et, l'un venant avec l'autre, démonter).
+
+Je le trouve assez intéressant, notamment de par le fait qu'il fasse appel à
+des caractéristiques souvent insoupçonnées du préprocesseur. Pour cette
+raison, j'ai finalement décidé de le mettre sur ce public.
+
+Le code est généralement commenté, principalement dans les headers. Je
+joindrais peut-être d'ici peu un fichier récapitulant l'ordre d'inclusion des
+headers, ou même un autre qui récapitulerait les points particuliers du code.
+Pour l'un comme pour l'autre, ne vous attendez cependant pas à ce que cela
+vienne tout de suite ... écrire de la documentation, c'est toujours beaucoup
+moins drôle que coder ou concevoir une architecture !
+
+Un petit point toutefois : je me suis volontairement arrêté à la version que je
+soumet aujourd'hui (parce qu'il est 6h du mat' et que les yeux commencent à
+piquer, j'ai une SUSIE à 11h et des projets à commencer, argh), mais il aurait
+été possible d'aller beaucoup plus loin, jusqu'à implémenter un héritage ou des
+interfaces.
+
+Pour le coup, ç'aurait été peut-être un peu overkill ...
+
+'Fin bref, amusez-vous autant à comprendre le code que moi à l'écrire !
+
+                                                                      - Arcanis
+                                                                     29/03/2011
