@@ -4,7 +4,7 @@
 
 This code gives an sort-of implementation of the C++ `std::list` using only C features. It allows to have a ready-to-use linked list without using the ugly `void*` hack. It also means that you will not make type errors when assigning elements into the list : their types will be checked at compile-time.
 
-The list have iterators but, contrary as C++'s implementation, those iterators are pointer objects. It means that you have to explicitely destroy them when you don't need them anymore.
+The lists have iterators but, as opposed to C++'s implementation, those iterators are pointer objects. It means that you have to explicitely destroy them when you don't need them anymore.
 
 Please note that this code has been made almost two years ago, I've simply translated the documentation in english after seing [another nice preprocessor-powered engine](https://github.com/orangeduck/CPP_COMPLETE) on the front page of HN. You can still make pull requests if you want to add features, I would be happy to discuss about it.
 
@@ -65,3 +65,7 @@ Include in your source files your new header file, then use the following macro 
     ...    : Method parameters
 
 You can check the main file (`LibListAPI.h`) for an exaustive list of the methods available in this library.
+
+### Example
+
+Please see the [main.c](https://github.com/arcanis/epitech.generic-linked-list/blob/master/demonstration/main.c) file to see a full example of the API usage.
